@@ -1,13 +1,13 @@
 import React from 'react';
-// import useNavigate here.
+import { useNavigate } from 'react-router-dom';
 
 const PetDetailsNotFound = () => {
 
-  // get the navigate function from useNavigate
-  const navigate = "REPLACE ME";
 
-  const goHome = () => {
-    // Go home!
+  const navigate = useNavigate()
+  const goHome = (e) => {
+   e.preventDefault(); 
+  navigate('/')
   }
   
   return (
